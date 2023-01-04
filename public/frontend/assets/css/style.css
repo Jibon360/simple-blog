@@ -1,0 +1,262 @@
+/* ===================
+/* reset css default 
+======================== */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* ===================
+/* repeated css
+======================== */
+img {
+    width: 100%;
+}
+
+p {
+    font-size: 16px;
+    color: #191b1d;
+    line-height: 24px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+
+
+
+/* ===================
+/* header
+======================== */
+.navbar-toggler {
+    box-shadow: none;
+    outline: none;
+    border-radius: 0;
+    background-color: #191b1d;
+    color: white;
+}
+
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+#searchicon {
+    cursor: pointer;
+}
+
+.closebox {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid #191b1d;
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    transition: .5s all;
+}
+
+.closebox i {
+    font-size: 18px;
+}
+
+.searchbox {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s all ease-in-out;
+    position: absolute;
+    bottom: -100%;
+    transition: .5s all;
+    transform: scale(0);
+    z-index: 99999;
+    background-color: white;
+
+}
+
+.searchbox.searchboxtoggle {
+    /* display: none; */
+    transition: .5s all ease-in-out;
+    bottom: 0%;
+    transition: .5s all;
+    transform: scale(1);
+}
+
+
+/* ===================
+/* post
+======================== */
+
+.single-post {
+    transition: .5s all;
+    overflow: hidden;
+}
+
+.post-link {
+    font-size: 20px;
+    font-weight: bold;
+    color: #191b1d;
+    text-decoration: none;
+    transition: border 0px solid #191b1d 0.5s ease;
+    z-index: 444;
+}
+
+.single-post:hover .post-link {
+    border-bottom: 2px solid #191b1d;
+    transition: .8s all ease-in-out;
+}
+
+
+.authorimage {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    max-height: 40px;
+    max-width: 40px;
+    transform: scale(1);
+    transition: .5s all;
+}
+
+.single-post img {
+    transform: scale(1);
+    transition: .5s all;
+    overflow: hidden;
+}
+
+.single-post:hover.single-post img {
+    transform: scale(1.1);
+    transition: .5s all;
+}
+
+.authorinfo ul li span {
+    font-weight: 600;
+    color: #191b1d;
+    opacity: .6px;
+}
+
+.authorinfo ul li p {
+    font-weight: 600;
+    color: #191b1d;
+    opacity: .6px;
+}
+
+.single-post p {
+    color: #191b1d;
+    opacity: .6;
+}
+
+.post-read a {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #191b1d;
+}
+
+/* ===================
+/* paginations
+======================== */
+.simplepagination .pagination {
+    display: flex;
+    justify-content: center;
+}
+
+/* .simplepagination .page-item .page-link{
+    color: #fff;
+    background-color: #191b1d;
+} */
+
+/* ===================
+/* single page css
+======================== */
+.single-view-post h3 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.profile-view ul li img {
+    height: 50px;
+    width: 50px;
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.profile-info ul li span {
+
+    font-size: 14px;
+    font-weight: bold;
+    opacity: .7;
+    transition: .5s all;
+}
+
+.profile-info ul li span:hover {
+    opacity: 1;
+    transition: .5s all;
+}
+
+.profile img {
+    height: 200px;
+    width: 400px;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile .name {
+    font-weight: 800;
+}
+
+.profile-media ul li a i {
+    background-color: #191b1d;
+    color: #fff;
+    font-size: 14px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 50%;
+    transition: .5s all;
+    border: 2px solid #191b1d;
+}
+
+.profile-media ul li a i:hover {
+    transform: rotate(360deg);
+    transition: .5s all;
+    background-color: white;
+    color: black;
+    border: 2px solid #191b1d;
+}
+
+.profile .details {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+}
